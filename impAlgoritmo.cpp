@@ -94,9 +94,10 @@ std::vector<int> mergeSort(std::vector<int> &data) {
 
     int mid = data.size()/2;
 
-    std::vector<int> left(data.begin() + mid, data.end());
-    std::vector<int> right(data.begin(), data.begin() + mid);
+    std::vector<int> left(data.begin(), data.begin() + mid);
+    std::vector<int> right(data.begin() + mid, data.end());
          
+    //  Aqui ya se reciben los lados ordenados por sort     
     left = mergeSort(left);
     right = mergeSort(right);
 

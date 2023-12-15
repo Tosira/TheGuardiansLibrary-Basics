@@ -4,6 +4,16 @@
 #include <iostream>
 #include <vector>
 
+namespace nombreAlgoritmo {
+    const std::string selectionSort = "Selection Sort"; 
+    const std::string bubbleSort = "Bubble Sort"; 
+    const std::string insertionSort = "Insertion Sort"; 
+    const std::string shellSort = "Shell Sort"; 
+    const std::string mergeSort = "Merge Sort"; 
+    const std::string quickSort = "Quick Sort"; 
+    const std::string heapSort = "Heap Sort"; 
+};
+
 //  Base 
 void swap(int &a, int &b); 
 
